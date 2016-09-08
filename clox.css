@@ -1,0 +1,104 @@
+  html {
+    overflow: hidden;
+    touch-action: none;
+    content-zooming: none;
+  }
+  
+  body {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    -webkit-user-select: none;
+    /* to remove text selection cursor issue */
+  }
+  
+  canvas {
+    width: 100%;
+    height: 100%;
+    /*background: #008;*/
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+  }
+  /*#canvasBuffer {
+  display: none;
+}*/
+  
+  #info {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    color: white;
+    z-index: 2;
+    display: none;
+  }
+  
+  #settings {
+    position: absolute;
+    color: white;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    z-index: 2;
+    display: none;
+    background-color: rgba(55, 55, 55, 0.8);
+    margin: 0.5em;
+    padding: 0.5em;
+    /*visibility: hidden;*/
+    -moz-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes cssAnimation {
+    to {
+      width: 0;
+      height: 0;
+      overflow: hidden;
+    }
+  }
+  
+  @-webkit-keyframes cssAnimation {
+    to {
+      width: 0;
+      height: 0;
+      visibility: hidden;
+    }
+  }
+
+fieldset{
+  margin: 0.5em;
+  padding: 0.5em;
+  /*min-width: 100%;*/
+}
+
+.color{
+  margin: 0.5em;
+  padding: 0;
+  height: 7%;
+}
+
+#button{
+  position: relative;
+  width: 100%;
+  height: 12%;
+  bottom: -0.5em;
+}
+
+#r1{
+  position: absolute;
+  bottom: 10px;
+  text-align: middle;
+}

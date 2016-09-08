@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>clox</title>
+		<meta charset="utf-8">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<meta name="description" content="simple watches">
+		<meta name="keywords" content="time,clock,watch,watches,часы,время">
+		<meta name="author" content="Vyacheslav Ragozin">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		<link href="clox.css" rel="stylesheet" type="text/css">
+		 
+	</head>
+
+	<body>
+		<!--[if lt IE 8]><p>Your browser is <em>ancient!</em> Upgrade to a different browser. <a href="http://www.google.com/chromeframe/?redirect=true">Install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+<div id='info'>click for settings</div>
+<form id='settings'>
+  <header>settings</header>
+  <fieldset>
+    <legend>face</legend>
+    <!-- label>Check boxes</label>
+             <input type = "checkbox"
+                 id = "dig4"
+                 value = "dig4" />
+             <label for = "dig4">show </label>
+           
+             <input type = "checkbox"
+                 id = "dig8"
+                 value = "dig8" />
+             <label for = "dig8">show 1-12</label -->
+
+    <label>Show digits?</label>
+    <input type="radio" name="digits" id="dig0" value="dig0" />
+    <label for="dig0">no</label>
+
+    <input type="radio" name="digits" id="dig4" value="dig4" />
+    <label for="dig4">show 12, 3, 6, 9</label>
+
+    <input type="radio" name="digits" id="dig12" value="dig12" checked="checked" />
+    <label for="dig12">show 1 - 12</label>
+      
+  </fieldset>
+  <input id="color0" class="color" name="color" type="color" value="#99cc00"/>
+  <label for="color0">background</label>
+  <input id="color1" class="color" name="color" type="color" value="#ffff00"/>
+  <label for="color1">clockface</label>
+  <button id="button">Close</button>
+
+</form>
+		<div id="r1"><!-- Responsive -->
+			<a href="https://www.facebook.com/vyacheslav.ragozin.3">Vyacheslav Ragozin<!--img src="ad.jpg" width="320" height="50" alt="Vyacheslav Ragozin"--></a>
+		</div>
+	</body>
+	<script type="text/javascript" src="clox.js"></script>
+</html>
